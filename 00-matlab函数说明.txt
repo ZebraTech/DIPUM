@@ -1,0 +1,42 @@
+【1】数值转换
+	tofloalt【dipum】：转换至0~1的single、float型数据
+	gscale【dipum】：映射至0~1的指定区间
+	mat2gray：将数据映射至0~1的灰度空间
+	im2double：将图像数据映射到0~1的灰度空间
+	im2single：将图像数据映射到0~1的灰度空间
+	im2uint8：将0~1的图像数据映射到0~255的灰度空间
+	im2uint16：将0~1的图像数据映射到0~65536的灰度空间
+
+
+
+【2】灰度变换
+	imadjust：灰度变换
+	intrans【dipum】：常用灰度变换
+
+
+【2】模板
+	fspecial：生成滤波器模板
+	imnoise：添加噪声
+	imnoise2【dipum】：产生具有某种分布形式的噪声
+
+
+
+
+【3】空间滤波
+	imfilter：空间滤波
+	ordfilt2：2-D统计排序滤波
+	medfilt2：2-D中值滤波
+
+
+【4】频域滤波
+	freqz2：2-D频率响应
+	fft2：2-D快速傅里叶变换
+	fftshift：将傅里叶变换后频谱的0频移至原点O（或中心）
+	ifftshift：将傅里叶变换后频谱的0频移至坐标两端（或角点）
+	atan2：求相角
+	angle：求相角
+	real：求实部
+	imag：求虚部
+	paddedsize【dipum】：扩展傅里叶变换所用的图像尺寸
+	lpfilter【dipum】：生成‘理想型’，‘巴特沃斯型’，‘高斯型’低通滤波器的传递函数
+	dftfilt2【dipum】：频率域滤波
