@@ -8,8 +8,8 @@ function [out,revertclass] = tofloat(in)
 identity = @(x) x;
 tosingle = @im2single;
  
-table = {'uint8', tosingle, @im2unit8
-    'uint16', tosingle ,@im2unit16
+table = {'uint8', tosingle, @im2uint8
+    'uint16', tosingle ,@im2uint16
     'int16', tosingle, @im2int16
     'logical', tosingle, @logical
     'double', identity, identity
