@@ -68,7 +68,7 @@ otherwise
    error('Unknown distribution type.')
 end
 %--------------------------------------------------------------------------
-function saltpepper(M, N, a, b)
+function R = saltpepper(M, N, a, b)
 % Check to make sure that Pa + Pb is not > 1.
 if (a + b) > 1
     error('The sum Pa + Pb must not exceed 1.')
@@ -82,7 +82,7 @@ R(1:M, 1:N) = 0.5;
 X = rand(M, N);
 R(logical(X<=a)) = 0;
 u = a+b; 
-R(logical(X>a && X<=u)) = 1;
+R(X>a & X<=u) = 1;
 
 %--------------------------------------------------------------------------
 function R = exponential(M, N, a)
