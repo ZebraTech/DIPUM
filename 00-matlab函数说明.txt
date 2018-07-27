@@ -40,3 +40,10 @@
 	paddedsize【dipum】：扩展傅里叶变换所用的图像尺寸
 	lpfilter【dipum】：生成‘理想型’，‘巴特沃斯型’，‘高斯型’低通滤波器的传递函数
 	dftfilt2【dipum】：频率域滤波
+
+
+【5】图像复原
+    imnoise：使用噪声污染一幅图像
+    imnoise2【dipum】：产生给定PDF的空间随机噪声
+    imnoise3【diupm】：产生周期噪声
+    spfilt【diupm】：空间噪声滤波，包括：算术均值、几何均值、调和均值、反调和均值、中值、最大值、最小值、中点值、字母平衡值
